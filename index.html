@@ -1,0 +1,36 @@
+ <!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>PDF Flipbook</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <!-- jQuery (required by turn.js) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- PDF.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <!-- turn.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+</head>
+<body>
+  <div class="toolbar">
+    <button id="prevBtn">◀ Prev</button>
+    <button id="nextBtn">Next ▶</button>
+    <span class="spacer"></span>
+    <button id="zoomOut">-</button>
+    <button id="zoomIn">+</button>
+    <button id="fitBtn">Fit</button>
+    <button id="fsBtn">⤢ Full</button>
+  </div>
+
+  <div id="bookWrapper">
+    <div id="flipbook" class="flipbook">
+      <!-- pages will be injected here -->
+    </div>
+  </div>
+
+  <div id="loading">Loading PDF…</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
